@@ -1,0 +1,6 @@
+coverage
+dist
+package-lock.json
+.cache
+.idea
+.vscode
