@@ -1,5 +1,5 @@
 {
-  "watch": ["dist"],
-  "ext": "js",
+  "watch": ["dist", "views"],
+  "ext": "js,hbs",
   "exec": "node dist/main"
 }

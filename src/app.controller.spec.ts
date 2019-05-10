@@ -14,9 +14,11 @@ describe('AppController', () => {
     appController = app.get<AppController>(AppController);
   });
 
-  describe('root', () => {
-    it('should return "Hello World!"', () => {
-      expect(appController.getHello()).toBe('Hello World!');
-    });
+  it('renders root', () => {
+    expect(appController.root()).toStrictEqual({ title: 'Home Page' });
+  });
+
+  it('renders /about', () => {
+    expect(appController.about()).toStrictEqual({ title: 'About Page' });
   });
 });
